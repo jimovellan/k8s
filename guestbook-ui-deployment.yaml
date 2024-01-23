@@ -4,7 +4,6 @@ metadata:
   name: guestbook-ui
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: guestbook-ui
@@ -16,5 +15,4 @@ spec:
       containers:
       - image: nginx:alpine
         name: nginx
-        ports:
-        - containerPort: 80
+       
