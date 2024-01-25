@@ -13,6 +13,6 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: nginx:alpine
-        name: nginx
+      - image: hello-world
+        name: hello-world
        
