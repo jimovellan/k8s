@@ -16,6 +16,8 @@ spec:
       - image: nginx:alpine
         name: nginx
         env:
-          name: APP_PODIP
-          value: status.podIP
+          - name: APP_PODIP
+            valueFrom: 
+              fieldRef:
+                fieldPath: status.podIP
        
