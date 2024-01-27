@@ -15,4 +15,7 @@ spec:
       containers:
       - image: nginx:alpine
         name: nginx
+        env:
+          name: APP_PODIP
+          value: status.podIP
        
